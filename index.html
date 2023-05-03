@@ -17,7 +17,7 @@
         <section class=" text-white">
           
             <div class="text-center p-3 ">
-              <h1 class="text-5xl mt-8 mb-5">Select Your Best Five</h1>
+              <h1 class="text-5xl mt-8 mb-5 text-rose-800 font-bold">Select Your Best Five</h1>
               <p class="text-1xl mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Aliquam nobis, tempore repellat excepturi hic pariatur provident <br> iure molestiae harum. Suscipit?</p> 
             </div>
           
@@ -129,8 +129,6 @@
                       <tr>
                         <th></th>
                         <th>Name</th>
-                      
-                        
                       </tr>
                     </thead>
                     <tbody>
@@ -138,15 +136,11 @@
                       <tr>
                         <th>1</th>
                         <td>Cy Ganderton</td>
-                        
-                       
                       </tr>
                    </tbody>
                   </table>
                 </div>
-              
-               
-          </div>
+              </div>
          <section>
           <div class="bg-lime-200 py-4 rounded-xl">
             <h2 class="text-4xl text-center  mb-5">Budget</h2>
@@ -154,41 +148,41 @@
             <div class="flex gap-4 ">
               <p class=" ml-24 text-1xl">Per Player:</p>
               <div>
-               <input type="number" placeholder="$0"></input>
+               <input id="player" type="number" placeholder="$0"></input>
               </div>
             </div>
             <!-- calculate button -->
             <div  class="text-center m-5">
-              <button class="btn btn-active btn-secondary">Calculate</button>
+              <button class="btn btn-active btn-secondary" id="calculate">Calculate</button>
             </div>
             <div class="flex gap-8 mb-5">
               <p class=" ml-24 text-1xl">Player Expenses</p>
               <div class="">
-                <p>$<span>0</span></p>
+                <p>$<span id="player-expenses">0</span></p>
               </div>
              </div>
              <!-- manager -->
              <div class="flex gap-4 mb-5">
               <p class=" ml-24 text-1xl">Manager:</p>
               <div>
-               <input type="number" placeholder="$0">
+               <input id="manager" type="number" placeholder="$0">
               </div>
             </div>
             <!-- coach -->
             <div class="flex gap-8 ">
               <p class="ml-24 text-1xl">Coach:</p>
               <div>
-               <input type="number" placeholder="$0">
+               <input id="coach" type="number" placeholder="$0">
               </div>
             </div>
             <!-- calculate total  -->
             <div  class="text-center m-5">
-              <button class="btn btn-active btn-secondary">Calculate Total</button>
+              <button id="calculate-total" class="btn btn-active btn-secondary">Calculate Total</button>
             </div>
             <div class="flex gap-28 mb-5">
               <p class=" ml-24 text-1xl">Total</p>
               <div class="">
-                <p>$<span>0</span></p>
+                <p>$<span id="total">0</span></p>
               </div>
              </div>
           </div>
