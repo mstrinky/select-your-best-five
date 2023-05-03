@@ -1,4 +1,34 @@
-console.log('linked');
+// console.log('linked');
+
+const cardArray=[];
+
+function display(cardProduct){
+// console.log(cardProduct);
+const tableBody = document.getElementById('card-product');
+tableBody.innerHTML = '';
+for(let i=0; i<cardProduct.length; i++){
+  // console.log(cardArray[i]);
+  const name = cardArray[i].playerName;
+  const tr = document.createElement('tr');
+  tr.innerHTML =`
+  <tr>
+  <th>${i + 1}</th>
+  <td> ${name} </td>
+</tr>
+  ` 
+  tableBody.appendChild(tr);
+}
+}
+function selection(element){
+  // console.log(element.parentNode.parentNode.children[0]);
+  const playerName = element.parentNode.parentNode.children[0].innerText;
+  // console.log(playerName);
+  cardArray.push(playerName);
+  // console.log(cardArray);
+  document.getElementById('player').value= cardArray.length;
+  display(cardArray);
+}
+
 document.getElementById('calculate').addEventListener('click',function(){
     // console.log('clicked');
     const perPlayer = document.getElementById('player');
