@@ -23,9 +23,12 @@ function selection(element){
   // console.log(element.parentNode.parentNode.children[0]);
   const playerName = element.parentNode.parentNode.children[0].innerText;
   // console.log(playerName);
-  cardArray.push(playerName);
+  const playerObj = {
+    playerName:playerName
+  }
+  cardArray.push(playerObj);
   // console.log(cardArray);
-  document.getElementById('player').value= cardArray.length;
+  // document.getElementById('player').value= cardArray.length;
   display(cardArray);
 }
 
@@ -37,7 +40,7 @@ document.getElementById('calculate').addEventListener('click',function(){
     // console.log(player);
     const playerExpenses = document.getElementById('player-expenses');
     const playerExpensesField = playerExpenses.innerText;
-    playerExpenses.innerText = player;
+    playerExpenses.innerText = player ;
     // console.log(playerExpensesField);
 })
 
