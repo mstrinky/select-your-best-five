@@ -40,7 +40,7 @@ document.getElementById('calculate').addEventListener('click',function(){
     // console.log(player);
     const playerExpenses = document.getElementById('player-expenses');
     const playerExpensesField = playerExpenses.innerText;
-    playerExpenses.innerText = player ;
+    playerExpenses.innerText = player * 5;
     // console.log(playerExpensesField);
 })
 
