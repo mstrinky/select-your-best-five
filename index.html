@@ -12,12 +12,42 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+<header>
+  <div class="navbar bg-base-100 bg-gray-200">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <label tabindex="0" class="btn btn-ghost btn-circle">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+        </label>
+        <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a>Home</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="navbar-center">
+      <a class="btn btn-ghost normal-case text-xl">BestFive</a>
+    </div>
+    <div class="navbar-end">
+      <button class="btn btn-ghost btn-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+      </button>
+      <button class="btn btn-ghost btn-circle">
+        <div class="indicator">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
+          <span class="badge badge-xs badge-primary indicator-item"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+</header>
 <body>
     <main>
-        <section>
+        <section class="bg-pink-300">
             <div class="text-center p-3 ">
               <h1 class="text-5xl mt-8 mb-5 text-rose-800 font-bold">Select Your Best Five</h1>
-              <p class="text-1xl mb-5 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Aliquam nobis, tempore repellat excepturi hic pariatur provident <br> iure molestiae harum. Suscipit?</p> 
+              <p class="text-1xl mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Aliquam nobis, tempore repellat excepturi hic pariatur provident <br> iure molestiae harum. Suscipit?</p> 
             </div>
           
         </section>
@@ -140,7 +170,7 @@
                 </div>
               </div>
          <section>
-          <div class="bg-lime-200 py-4 rounded-xl">
+          <div class="bg-pink-300 py-4 rounded-xl">
             <h2 class="text-4xl text-center  mb-5">Budget</h2>
             <!-- per player -->
             <div class="flex gap-4 ">
@@ -199,7 +229,7 @@
     </main>
     <hr class="hr">
   
-      <footer class="text-center py-4 text-white">Copyright @ 2022 All Rights Reserved.</footer>
+      <footer class="text-center py-4 ">Copyright @ 2022 All Rights Reserved.</footer>
       <script src="script.js"></script>
 </body>
 </html>
